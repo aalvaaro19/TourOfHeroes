@@ -1,0 +1,9 @@
+<h2>Formularios Template Driven - basados en plantilla</h2>
+<p>Basado en directivas y asíncrono. Menos escalable y peor validación</p>
+<form #formTemplateDriven="ngForm" (ngSubmit)="onSubmit(formTemplateDriven)">
+  <label for="name">Nombre</label>
+  <input type="text" name="name" ngModel required>
+  <label for="email">Email</label>
+  <input type="email" name="email" ngModel required email>
+  <input type="submit" value="Enviar">
+</form>
